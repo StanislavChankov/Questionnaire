@@ -1,0 +1,20 @@
+<!-- <app-welcome></app-welcome> -->
+
+<div class="example-action-buttons">
+  <button mat-button (click)="accordion.openAll()">Expand All</button>
+  <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+</div>
+<mat-accordion class="example-headers-align" multi>
+  <mat-expansion-panel *ngFor="let topic of csharpTopicQuestionAnswers">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{topic.topicName}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="row" *ngFor="let questionAnswer of topic.questionAnswers">
+      <mat-card class="example-card col-1" [innerHTML]="questionAnswer.question"></mat-card>
+      <mat-card class="example-card col-11" [innerHTML]="questionAnswer.answer"></mat-card>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

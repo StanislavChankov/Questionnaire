@@ -1,0 +1,542 @@
+[
+  {
+    "topicName": "C#",
+    "questionAnswers": [
+      {
+        "question": "What are properties?",
+        "answer": "A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field. Properties can be used as if they are public data members, but they are actually special methods called accessors. This enables data to be accessed easily and still helps promote the safety and flexibility of methods."
+      },
+      {
+        "question": "What is the extension metod?",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": ".NET",
+    "questionAnswers": [
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "What is cancellation token?",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "SOLID",
+    "questionAnswers": [
+      {
+        "question": "Single Responsibility principle",
+        "answer": "Do one thing, but do it right. Methods, classes and other software entities and modules should be focues on single thing. In case the principle is not followed strictly and we have to change something there is a risk of side effects."
+      },
+      {
+        "question": "Open-closed principle",
+        "answer": "Software entities should be opened for extension, but closed for modification. In case we have working code in production we do not want to change it, since we can break it."
+      },
+      {
+        "question": "Liskov substitution principle",
+        "answer": "Instance of a child class must replace an instance of the parent class, without affecting the results that we would get from an instance of the base class itself."
+      },
+      {
+        "question": "Interface segregation Principle",
+        "answer": "Make fine grained, client specific interfaces. It is better to have many and small interfaces, than one big and shared interface. Having different small interfaces for each functionality will not force us to implement unneeded methods."
+      },
+      {
+        "question": "Dependency Inversion Principle",
+        "answer": "Depend on abstractions, not on implementations. High-level module should not depend on low-level modules. Both should depend on abstraction."
+      }
+    ]
+  },
+  {
+    "topicName": "SQL",
+    "questionAnswers": [
+      {
+        "question": "Inner join vs. Left join",
+        "answer": ""
+      },
+      {
+        "question": "<span>What is Normalization?</span>",
+        "answer": "<p>It is the process of eliminating redundant data and maintaining data dependencies.</p>"
+      },
+      {
+        "question": "<span>What is a view?</span>",
+        "answer": "<p>A <strong>view</strong> is simply a virtual table that is made up of elements of multiple physical or “real” tables. Views are most commonly used to join multiple tables together, or control access to any tables existing in background server processes.\t</p>"
+      },
+      {
+        "question": "What are indexes?",
+        "answer": ""
+      },
+      {
+        "question": "MSSQL locking",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "LINQ",
+    "questionAnswers": [
+      {
+        "question": "<span>What is LINQ? Why is it required?</span>",
+        "answer": "<p><strong>Language Integrated Query</strong> or <strong>LINQ</strong> is the collection of standard query operators which provides query facilities into.NET framework language like C#, VB.NET. LINQ is required as it bridges the gap between the world of data and the world of objects.</p>"
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "OOP",
+    "questionAnswers": [
+      {
+        "question": "Abstract class vs. Interface?",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "Microservices",
+    "questionAnswers": [
+      {
+        "question": "Pros and cons?",
+        "answer": "<h6>Pros</h6><ul><li>Faster deployment</li><li>Easier to maintain, scale and change.</li><li>Higher availability</li><li>Easily change technology stack.</li><li>Easily separate business domains.</li><ul/><h6>Cons</h6><li>Requires deeper business understanding.</li><li>Requires more skilled developers/architects.</li><li>Not good choice for prototyping.</li>"
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "Testing",
+    "questionAnswers": [
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "DevOps",
+    "questionAnswers": [
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "Design Patterns",
+    "questionAnswers": [
+      {
+        "question": "Gang of four",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "git",
+    "questionAnswers": [
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "REST",
+    "questionAnswers": [
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "Angular",
+    "questionAnswers": [
+      {
+        "question": "What is a component? Why would you use it?",
+        "answer": "Components are the most basic building block of an UI in an Angular application. An Angular application is a tree of Angular components. Angular components are a subset of directives. Unlike directives, components always have a template and only one component can be instantiated per an element in a template. A component must belong to an NgModule in order for it to be usable by another component or application. To specify that a component is a member of an NgModule, you should list it in the declarations field of that NgModule."
+      },
+      {
+        "question": "What is Routing Guard in Angular?",
+        "answer": "Angular’s route guards are interfaces which can tell the router whether or not it should allow navigation to a requested route. They make this decision by looking for a true or false return value from a class which implements the given guard interface."
+      },
+      {
+        "question": "What is a module, and what does it contain?",
+        "answer": "An Angular module is set of Angular basic building blocks like component, directives, services etc. An app can have more than one module."
+      },
+      {
+        "question": "What is interpolation?",
+        "answer": "Interpolation is a special syntax that Angular converts into property binding. It’s a convenient alternative to property binding. It is represented by double curly braces({{}}). The text between the braces is often the name of a component property. Angular replaces that name with the string value of the corresponding component property."
+      }
+    ]
+  },
+  {
+    "topicName": "JavaScript",
+    "questionAnswers": [
+      {
+        "question": "What is Scope in JavaScript?",
+        "answer": "In JavaScript, each function gets its own scope. Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. <br/> Only code inside that function can access that function's scoped variables.   A variable name has to be unique within the same scope. A scope can be nested inside another scope. If one scope is nested inside another, code inside the innermost scope can access variables from either scope."
+      },
+      {
+        "question": "<span>What does <code>use strict</code> do?</span>",
+        "answer": "<p>The <code>use strict</code> literal is entered at the top of a JavaScript program or at the top of a function and it helps you write safer JavaScript code by throwing an error if a global variable is created by mistake. For example, the following program will throw an error:</p>"
+      },
+      {
+        "question": "<span>Explain <code>Null</code> and <code>Undefined</code> in JavaScript</span>",
+        "answer": "<p>JavaScript (and by extension TypeScript) has two bottom types: <code>null</code> and <code>undefined</code>. They are <em>intended</em> to mean different things:</p> <ul><li>Something hasn't been initialized : <code>undefined</code>.</li><li>Something is currently unavailable: <code>null</code>.</li></ul>"
+      }
+    ]
+  },
+  {
+    "topicName": "Xamarin",
+    "questionAnswers": [
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "TypeScript",
+    "questionAnswers": [
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  }
+]
