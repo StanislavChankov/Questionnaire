@@ -4,11 +4,11 @@
     "questionAnswers": [
       {
         "question": "What are properties?",
-        "answer": "A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field. Properties can be used as if they are public data members, but they are actually special methods called accessors. This enables data to be accessed easily and still helps promote the safety and flexibility of methods."
+        "answer": "A property is a class member and can be defined in interfaces or abstract classes. They provides a flexible mechanism to read, write, or compute the value of a private field. Properties are special methods called accessors. This enables data to be accessed easily and still helps promote the safety and flexibility of methods."
       },
       {
         "question": "What is the extension metod?",
-        "answer": ""
+        "answer": "<p>Extension methods are <code>static</code> methods. They enable you to 'add' methods to existing types without creating a new derived type or otherwise modifying the original type. Extension methods are static methods, but they're called as if they were instance methods on the extended type.</p>"
       },
       {
         "question": "",
@@ -41,7 +41,7 @@
       },
       {
         "question": "What is cancellation token?",
-        "answer": ""
+        "answer": "Cancellation token struct provides behaviour for cancellation of multiple threads, tasks or operations. Once Cancel() method is invoked it cancels the threads, tasks and operations to which is passed and throws <code>OperationCancelledException</code>."
       },
       {
         "question": "",
@@ -173,23 +173,23 @@
     "questionAnswers": [
       {
         "question": "Abstract class vs. Interface?",
-        "answer": ""
+        "answer": "<ul><li>Both cannot be instantiated, but abstract classes have constructors.</li><li>Interfaces cannot have implementations, but abstract classes can.</li><li>Interfaces can define only properties, methods, delegates and events, but abstract classes can define everything that classes can.</li><li>In C# we can implement multiple interfaces, but inherit from single abstract class.</li><li>Abstract classes could define any access modifiers, but interfaces does not specify modifiers, everything is public.</li></ul>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Inheritance",
+        "answer": "Child class to receive behaviours, characteristics and data or other class members from a parent class."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Abstraction",
+        "answer": "Allows the performing of actions on a abstract level. Ignores aspects of information and focuses on the most important."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Encapsulation",
+        "answer": "Enables information hiding from some of the clients. Makes it impossible for the users of an object to change the state in an unexpected way."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Polymorphism",
+        "answer": "The ability to work with specific behaviours in class through an interface. This allows the functionality to be modified in a specific class."
       },
       {
         "question": "",
@@ -210,7 +210,7 @@
     "questionAnswers": [
       {
         "question": "Pros and cons?",
-        "answer": "<h6>Pros</h6><ul><li>Faster deployment</li><li>Easier to maintain, scale and change.</li><li>Higher availability</li><li>Easily change technology stack.</li><li>Easily separate business domains.</li><ul/><h6>Cons</h6><li>Requires deeper business understanding.</li><li>Requires more skilled developers/architects.</li><li>Not good choice for prototyping.</li>"
+        "answer": "<h6>Pros</h6><ul><li>Faster deployment</li><li>Easier to maintain, scale and change.</li><li>Higher availability</li><li>Easily change technology stack.</li><li>Easily separate business domains.</li><li>Good for small teams.</li><ul/><h6>Cons</h6><li>Requires deeper business understanding.</li><li>Requires more skilled developers/architects.</li><li>Not good choice for prototyping.</li>"
       },
       {
         "question": "",

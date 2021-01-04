@@ -14,7 +14,6 @@ export class AppComponent {
 
   constructor() {
     console.log(csharpQuestions);
-    debugger;
     this.csharpTopicQuestionAnswers = csharpQuestions;
   }
 }
