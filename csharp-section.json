@@ -11,16 +11,16 @@
         "answer": "<p>Extension methods are <code>static</code> methods. They enable you to 'add' methods to existing types without creating a new derived type or otherwise modifying the original type. Extension methods are static methods, but they're called as if they were instance methods on the extended type.</p>"
       },
       {
-        "question": "",
+        "question": "Async vs Sync appraoch?",
         "answer": ""
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "c# readonly vs const",
+        "answer": "<h6><code>readonly</code></h6><ul><li>readonly is a runtime constant.</li>  <li>Assign values in declaration and in the contructor part.</li>  <li>It cannot be declared inside the method.</li>   <li>It can be used with static modifiers.</li></ul>   <ul> <h6><code>const</code></h6>  <li>Const is a compile time constant.</li>  <li>It can be declared inside the method.</li>    <li>It cannot be used with static modifiers.</li>  <li>Assign values in declaration part.</li></ul>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Boxing vs. Unboxing",
+        "answer": "<ul><li>Boxing is implicit casting - Boxing is the process of converting a value type to the type object. CLR wraps value type inside object and stores it on the managed heap.</li>   <li>Unboxing - explicit casting. Unboxing extracts the value type from the object.</li><ul>"
       },
       {
         "question": "",
@@ -36,16 +36,12 @@
     "topicName": ".NET",
     "questionAnswers": [
       {
-        "question": "",
-        "answer": ""
-      },
-      {
         "question": "What is cancellation token?",
         "answer": "Cancellation token struct provides behaviour for cancellation of multiple threads, tasks or operations. Once Cancel() method is invoked it cancels the threads, tasks and operations to which is passed and throws <code>OperationCancelledException</code>."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is the purpose of IDisposable interface?",
+        "answer": "<p> Implementing the Dispose method allows us to manually release unmanaged resources. Instance members that are IDisposable implementations, cascade Dispose calls. The invocation of the method frees memory that was allocated, remove an item that was added to a collection, or signal the release of a lock that was acquired.</p> <p>The .NET garbage collector does not allocate or release unmanaged memory.</p>"
       },
       {
         "question": "",
@@ -99,7 +95,7 @@
     "questionAnswers": [
       {
         "question": "Inner join vs. Left join",
-        "answer": ""
+        "answer": "<p>Join</p> <ul><li>Results with a new table from the combination of selected columns from one or more tables.</li></ul>  <p>Inner join</p> <ul><li>The result contains those records from the table/s that both records meets the ON CLAUSE condition.</li></ul>  <p>Left join</p> <ul><li>The result contains those records from the right table that meets the ON CLAUSE condition and each record from the left table.</li></ul>"
       },
       {
         "question": "<span>What is Normalization?</span>",
@@ -118,11 +114,19 @@
         "answer": ""
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Cluster vs. non-clustered index?",
+        "answer": "Clustered includes data and non-clustered doesn’t. Clustered index is how the data is stored sequentially on disk and contains all data in the table. A non-clustered index is defined by the user and does not need to include all columns in the table. A table may only have one Clustered index but can have multiple non-clustered indexes."
       },
       {
-        "question": "",
+        "question": "What is a stored procedure?",
+        "answer": "cached query plans"
+      },
+      {
+        "question": "What are the different type of functions you can create?",
+        "answer": "Table valued functions, scalar functions"
+      },
+      {
+        "question": "What is Cursor?",
         "answer": ""
       },
       {
@@ -210,11 +214,11 @@
     "questionAnswers": [
       {
         "question": "Pros and cons?",
-        "answer": "<h6>Pros</h6><ul><li>Faster deployment</li><li>Easier to maintain, scale and change.</li><li>Higher availability</li><li>Easily change technology stack.</li><li>Easily separate business domains.</li><li>Good for small teams.</li><ul/><h6>Cons</h6><li>Requires deeper business understanding.</li><li>Requires more skilled developers/architects.</li><li>Not good choice for prototyping.</li>"
+        "answer": "<h6>Pros</h6><ul><li>Faster deployment</li><li>Easier to maintain, scale and change.</li><li>Higher availability</li><li>Easily change technology stack.</li><li>Easily separate business domains.</li><li>Good for small teams.</li><ul/><h6>Cons</h6><li>Requires deeper business understanding.</li><li>Learning curve is steep, so it requires more skilled developers/architects.</li>   <li>It is easy to get wrong the whole architecture - distributed monolith/coupled services.</li>    <li>Not good choice for prototyping.</li>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "How do you split them?",
+        "answer": "<h6>Split from a monolith</h6><ul><li>0 - Review the application level code to extract.</li><li>1 - Refactor the code to loosely coupled module.</li><li>2 - Split the database entities of the refactored module to new database.</li><li>3 - Define a standalone microservice</li><li>4 - Use the standalone microservice - rerouting the logic - http/grpc/amqp(message broker)</li></ul>"
       },
       {
         "question": "",
@@ -247,6 +251,80 @@
     "questionAnswers": [
       {
         "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "Security",
+    "questionAnswers": [
+      {
+        "question": "OAuth protocol",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
+    "topicName": "Code quality",
+    "questionAnswers": [
+      {
+        "question": "Coupling vs. cohesion",
         "answer": ""
       },
       {
@@ -324,11 +402,11 @@
         "answer": ""
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Inversion of Control",
+        "answer": "IOC and DI are design pattern aiming to reach loosely coupled application modules and make them easier for to test and maintain."
       },
       {
-        "question": "",
+        "question": "MVC",
         "answer": ""
       },
       {
