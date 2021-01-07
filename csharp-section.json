@@ -4,7 +4,7 @@
     "questionAnswers": [
       {
         "question": "What are properties?",
-        "answer": "A property is a class member and can be defined in interfaces or abstract classes. They provides a flexible mechanism to read, write, or compute the value of a private field. Properties are special methods called accessors. This enables data to be accessed easily and still helps promote the safety and flexibility of methods."
+        "answer": "A property is a class member and can be defined in interfaces or abstract classes. They provides a flexible mechanism to read, write, or compute the value of a private field. Properties are special methods called accessors. This enables data to be accessed easily and still helps promote the safety and flexibility of methods.               <ul><li><p>Properties enable a class to expose a public way of getting and setting values, while hiding implementation or verification code.</p></li><li><p>A get</a> property accessor is used to return the property value, and a set</a> property accessor is used to assign a new value.</a>.</p></li><li><p>The keyword is used to define the value being assigned by the <code>set</code> accessor.</p></li><li><p>Properties can be <em>read-write</em> (they have both a <code>get</code> and a <code>set</code> accessor), <em>read-only</em> (they have a <code>get</code> accessor but no <code>set</code> accessor), or <em>write-only</em> (they have a <code>set</code> accessor, but no <code>get</code> accessor) </p></li><li><p>Simple properties that require no custom accessor code can be implemented either as expression body definitions or as auto-implemented properties</a>.</p></li></ul>"
       },
       {
         "question": "What is the extension metod?",
@@ -95,7 +95,7 @@
     "questionAnswers": [
       {
         "question": "Inner join vs. Left join",
-        "answer": "<p>Join</p> <ul><li>Results with a new table from the combination of selected columns from one or more tables.</li></ul>  <p>Inner join</p> <ul><li>The result contains those records from the table/s that both records meets the ON CLAUSE condition.</li></ul>  <p>Left join</p> <ul><li>The result contains those records from the right table that meets the ON CLAUSE condition and each record from the left table.</li></ul>"
+        "answer": "<p>Join</p> <ul><li>Combines the records from the table/s by comparing the values in the columns and returns the ones that matches the ON CLAUSE condition. Results with a new table.</li></ul>  <p>Inner join</p> <ul><li>The result contains those records from the table/s that both records meets the ON CLAUSE condition.</li></ul>  <p>Left join</p> <ul><li>The result contains those records from the right table that meets the ON CLAUSE condition and each record from the left table.</li></ul>"
       },
       {
         "question": "<span>What is Normalization?</span>",
@@ -107,7 +107,7 @@
       },
       {
         "question": "What are indexes?",
-        "answer": ""
+        "answer": "<p>Indexes are used to speed-up query process in SQL Server, resulting in high performance. They are similar to textbook indexes. In textbooks, if you need to go to a particular chapter, you go to the index, find the page number of the chapter and go directly to that page. Without indexes, the process of finding your desired chapter would have been very slow.</p>"
       },
       {
         "question": "MSSQL locking",
@@ -115,7 +115,7 @@
       },
       {
         "question": "Cluster vs. non-clustered index?",
-        "answer": "Clustered includes data and non-clustered doesn’t. Clustered index is how the data is stored sequentially on disk and contains all data in the table. A non-clustered index is defined by the user and does not need to include all columns in the table. A table may only have one Clustered index but can have multiple non-clustered indexes."
+        "answer": "<p>Clustered Index </p> <li> A clustered index defines the order in which data is physically stored in a table. Table data can be sorted in only way, therefore, there can be only one clustered index per table. In SQL Server, the primary key constraint automatically creates a clustered index on that particular column.</li> <p> Non-clustered Index </p> <li>A non-clustered index doesn’t sort the physical data inside the table. In fact, a non-clustered index is stored at one place and table data is stored in another place. This is similar to a textbook where the book content is located in one place and the index is located in another. This allows for more than one non-clustered index per table.</li>   <li>It is important to mention here that inside the table the data will be sorted by a clustered index. However, inside the non-clustered index data is stored in the specified order. The index contains column values on which the index is created and the address of the record that the column value belongs to.</li>   <li>When a query is issued against a column on which the index is created, the database will first go to the index and look for the address of the corresponding row in the table. It will then go to that row address and fetch other column values. It is due to this additional step that non-clustered indexes are slower than clustered indexes.</li>"
       },
       {
         "question": "What is a stored procedure?",
@@ -130,8 +130,36 @@
         "answer": ""
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Join Types",
+        "answer": "<ul><li>Inner Join</li> <li>Left/Right Join</li>   <li>Full Outer Join</li>    <li>Cross Join</li>   <li>Self Join</li>  </ul>"
+      },
+      {
+        "question": "Types of Transaction Isolation Levels",
+        "answer": "<ul><li>Read Uncommitted</li>   <li>Read Committed</li>    <li>Snapshot</li>   <li>Serilizable</li>  <li>Repeatable read</li></ul>"
+      },
+      {
+        "question": "What is table scan?",
+        "answer": "Without indexes, a DBMS has to go through all the records in the table in order to retrieve the desired results. This process is called table-scanning and is extremely slow."
+      },
+      {
+        "question": "READ UNCOMMITTED?",
+        "answer": "<p>Specifies that statements can read rows that have been modified by other transactions but not yet committed. When this option is set, it is possible to read uncommitted modifications, which are called dirty reads.</p>"
+      },
+      {
+        "question": "READ COMMITTED?",
+        "answer": "Specifies that statements cannot read data that has been modified but not committed by other transactions.This prevents dirty reads. This option is the SQL Server default. The behavior of READ COMMITTED depends on the setting of the READ_COMMITTED_SNAPSHOT database option: If READ_COMMITTED_SNAPSHOT is set to OFF (the default), the Database Engine uses shared locks to prevent other transactions from modifying rows while the current transaction is running a read operation. The shared locks also block the statement from reading rows modified by other transactions until the other transaction is completed. If READ_COMMITTED_SNAPSHOT is set to ON, the Database Engine uses row versioning to present each statement with a transactionally consistent snapshot of the data as it existed at the start of the statement. Locks are not used to protect the data from updates by other transactions."
+      },
+      {
+        "question": "SNAPSHOT?",
+        "answer": "Specifies that data read by any statement in a transaction will be the transactionally consistent version of the data that existed at the start of the transaction. The transaction can only recognize data modifications that were committed before the start of the transaction. Data modifications made by other transactions after the start of the current transaction are not visible to statements executing in the current transaction. SNAPSHOT transactions do not request locks when reading data. SNAPSHOT transactions reading data do not block other transactions from writing data. Transactions writing data do not block SNAPSHOT transactions from reading data."
+      },
+      {
+        "question": "REPEATABLE READ?",
+        "answer": "Specifies that statements cannot read data that has been modified but not yet committed by other transactions and that no other transactions can modify data that has been read by the current transaction until the current transaction completes."
+      },
+      {
+        "question": "SERIALIZABLE",
+        "answer": "<li>Statements cannot read data that has been modified but not yet committed by other transactions.</li> <li>* No other transactions can modify data that has been read by the current transaction until the current transaction completes.</li> <li>* Other transactions cannot insert new rows with key values that would fall in the range of keys read by any statements in the current transaction until the current transaction completes.</li>"
       }
     ]
   },
@@ -213,16 +241,16 @@
     "topicName": "Microservices",
     "questionAnswers": [
       {
+        "question": "What are Microservices?",
+        "answer": "<p>Microservice architecture - is an architectural style that structures an application as a collection of services that are</p><ul> <li>Highly maintainable and testable</li><li>Loosely coupled</li><li>Independently deployable</li><li>Organized around business capabilities</li><li>Owned by a small team</li></ul> The microservice architecture enables the rapid, frequent and reliable delivery of large, complex applications. It also enables an organization to evolve its technology stack.</div>"
+      },
+      {
         "question": "Pros and cons?",
-        "answer": "<h6>Pros</h6><ul><li>Faster deployment</li><li>Easier to maintain, scale and change.</li><li>Higher availability</li><li>Easily change technology stack.</li><li>Easily separate business domains.</li><li>Good for small teams.</li><ul/><h6>Cons</h6><li>Requires deeper business understanding.</li><li>Learning curve is steep, so it requires more skilled developers/architects.</li>   <li>It is easy to get wrong the whole architecture - distributed monolith/coupled services.</li>    <li>Not good choice for prototyping.</li>"
+        "answer": "<h6>Pros</h6><ul><li>Faster deployment</li><li>Easier to maintain, test, scale and change.</li><li>Higher availability</li><li>Easily change technology stack.</li><li>Easily separate business domains.</li><li>Good for small teams.</li><ul/><h6>Cons</h6><li>Requires deeper business understanding.</li><li>Learning curve is steep, so it requires more skilled developers/architects.</li>   <li>It is easy to get wrong the whole architecture - distributed monolith/coupled services.</li>    <li>Not good choice for prototyping.</li>"
       },
       {
         "question": "How do you split them?",
         "answer": "<h6>Split from a monolith</h6><ul><li>0 - Review the application level code to extract.</li><li>1 - Refactor the code to loosely coupled module.</li><li>2 - Split the database entities of the refactored module to new database.</li><li>3 - Define a standalone microservice</li><li>4 - Use the standalone microservice - rerouting the logic - http/grpc/amqp(message broker)</li></ul>"
-      },
-      {
-        "question": "",
-        "answer": ""
       },
       {
         "question": "",
