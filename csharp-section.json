@@ -427,7 +427,7 @@
     "questionAnswers": [
       {
         "question": "Gang of four",
-        "answer": ""
+        "answer": "<a href=\"http://www.blackwasp.co.uk/gofpatterns.aspx\">Gang of four!</a>"
       },
       {
         "question": "Inversion of Control",
@@ -435,7 +435,7 @@
       },
       {
         "question": "MVC",
-        "answer": ""
+        "answer": "<dl><dt>Model</dt><dd>The central component of the pattern. It is the application's dynamic data structure, independent of the user interface</a></sup> It directly manages the data, logic and rules of the application.</dd><dt>View</dt><dd>Any representation of information such as a chart, diagram or table. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.</dd><dt>Controller</dt><dd>Accepts input and converts it to commands for the model or view</a></sup></dd></dl><p>In addition to dividing the application into these components, the model–view–controller design defines the interactions between them.</a></sup></p><ul><li>The model is responsible for managing the data of the application. It receives user input from the controller.</li><li>The view means presentation of the model in a particular format.</li><li>The controller responds to the user input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model.</li></ul>"
       },
       {
         "question": "",
