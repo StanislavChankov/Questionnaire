@@ -127,7 +127,7 @@
       },
       {
         "question": "What is Cursor?",
-        "answer": ""
+        "answer": "<p>Microsoft SQL Server statements produce a complete result set, but there are times when the results are best processed one row at a time. Opening a cursor on a result set allows processing the result set one row at a time. You can assign a cursor to a variable or parameter with a <strong>cursor</strong> data type.</p>"
       },
       {
         "question": "Join Types",
