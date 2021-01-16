@@ -23,8 +23,8 @@
         "answer": "<ul><li>Boxing is implicit casting - Boxing is the process of converting a value type to the type object. CLR wraps value type inside object and stores it on the managed heap.</li>   <li>Unboxing - explicit casting. Unboxing extracts the value type from the object.</li><ul>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "value type vs. reference type",
+        "answer": "<p><em>Value types</em> and <a>reference types</a> are the two main categories of C# types. A variable of a value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on <a>assignment</a>, passing an argument to a method, and returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied. The following example demonstrates that behavior:</p>     <p>There are two kinds of types in C#: reference types and value types. Variables of reference types store references to their data (objects), while variables of value types directly contain their data. With reference types, two variables can reference the same object; therefore, operations on one variable can affect the object referenced by the other variable. With value types, each variable has its own copy of the data, and it is not possible for operations on one variable to affect the other (except in the case of in, ref and out parameter variables; see <a>in</a>, <a>ref</a> and <a>out</a> parameter modifier).</p>"
       },
       {
         "question": "",
