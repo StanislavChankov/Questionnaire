@@ -24,11 +24,11 @@
       },
       {
         "question": "value type vs. reference type",
-        "answer": "<p><em>Value types</em> and <a>reference types</a> are the two main categories of C# types. A variable of a value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on <a>assignment</a>, passing an argument to a method, and returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied. The following example demonstrates that behavior:</p>     <p>There are two kinds of types in C#: reference types and value types. Variables of reference types store references to their data (objects), while variables of value types directly contain their data. With reference types, two variables can reference the same object; therefore, operations on one variable can affect the object referenced by the other variable. With value types, each variable has its own copy of the data, and it is not possible for operations on one variable to affect the other (except in the case of in, ref and out parameter variables; see <a>in</a>, <a>ref</a> and <a>out</a> parameter modifier).</p>"
+        "answer": "<p><em>Value types</em> and <a>reference types</a> are the two main categories of C# types.</p> <p>A variable of a value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on <a>assignment</a>, passing an argument to a method, and returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied.</p>     <p>Variables of reference types store references to their data (objects), while variables of value types directly contain their data. With reference types, two variables can reference the same object; therefore, operations on one variable can affect the object referenced by the other variable. With value types, each variable has its own copy of the data, and it is not possible for operations on one variable to affect the other (except in the case of in, ref and out parameter variables.</p>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "C# 9.0 features",
+        "answer": "<ul> <li><a>Records</a></li><li><a>Init only setters</a></li> <li><a>Top-level statements</a></li><li><a>Pattern matching enhancements</a></li><li>Native sized integers</li><li>Function pointers</li><li>Suppress emitting localsinit flag</li><li>Target-typed new expressions</li><li>static anonymous functions</li><li>Target-typed conditional expressions</li><li>Covariant return types</li><li>Extension <code>GetEnumerator</code> support for <code>foreach</code> loops</li><li>Lambda discard parameters</li><li>Attributes on local functions</li><li>Module initializers</li><li>New features for partial methods</li></ul>"
       }
     ]
   },
@@ -500,8 +500,8 @@
     "topicName": "REST",
     "questionAnswers": [
       {
-        "question": "",
-        "answer": ""
+        "question": "What are Architectural constraints?",
+        "answer": "<p>The principle behind the client–server constraints is the separation of concerns. Separating the user interface concerns from the data storage concerns improves the portability of the user interfaces across multiple platforms. It also improves scalability by simplifying the server components. Perhaps most significant to the Web is that the separation allows the components to evolve independently, thus supporting the Internet-scale requirement of multiple organizational domains.<sup><a</a></sup></p>"
       },
       {
         "question": "",
