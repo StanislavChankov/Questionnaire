@@ -69,6 +69,10 @@
     "topicName": "SOLID",
     "questionAnswers": [
       {
+        "question": "What is SOLID",
+        "answer": "<p>SOLID Principles is a coding standard that all developers should have a clear concept for developing software properly to avoid a bad design. It was promoted by Robert C Martin and is used across the object-oriented design spectrum. When applied properly it makes your code more extendable, logical, and easier to read.</p>"
+      },
+      {
         "question": "Single Responsibility principle",
         "answer": "Do one thing, but do it right. Methods, classes and other software entities and modules should be focues on single thing. In case the principle is not followed strictly and we have to change something there is a risk of side effects."
       },
@@ -353,7 +357,7 @@
     "questionAnswers": [
       {
         "question": "Coupling vs. cohesion",
-        "answer": ""
+        "answer": "<b>Cohesion:</b><br>Cohesion is the indication of the relationship within module. It is concept of intra-module. Cohesion has many types but usually highly cohesion is good for software.</p> <p><b>Coupling:</b><br> Coupling is also the indication of  the relationships between modules. It is concept of Inter-module. Coupling has also many types but usually low coupling is good for software.</p>"
       },
       {
         "question": "",
@@ -500,16 +504,16 @@
     "topicName": "REST",
     "questionAnswers": [
       {
-        "question": "What are Architectural constraints?",
-        "answer": "<p>The principle behind the client–server constraints is the separation of concerns. Separating the user interface concerns from the data storage concerns improves the portability of the user interfaces across multiple platforms. It also improves scalability by simplifying the server components. Perhaps most significant to the Web is that the separation allows the components to evolve independently, thus supporting the Internet-scale requirement of multiple organizational domains.<sup><a</a></sup></p>"
+        "question": "Statelessness",
+        "answer": "<p>In a client–server interaction, state is made up of intrinsic state and extrinsic state. <p><b>Intrinsic state</b>, called resource state, is stored on the server and consists of information that is independent of the server’s context, thereby making it <b>sharable</b> to all clients of the server.</p> <p><b>Extrinsic state</b>, called application state, is stored on each client and consists of information that is dependent on the server’s context and therefore <b>cannot be shared</b>. Clients are responsible for passing application state to the server when it needs it. The constraint of storing application state on the client rather than on the server makes the communication stateless.</p>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Cacheability",
+        "answer": "<p>As on the World Wide Web, clients and intermediaries can cache responses. Responses must, implicitly or explicitly, define themselves as either cacheable or non-cacheable to prevent clients from providing stale or inappropriate data in response to further requests. Well-managed caching partially or completely eliminates some client–server interactions, further improving scalability and performance.</p>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Layered system",
+        "answer": "A client cannot ordinarily tell whether it is connected directly to the end server or to an intermediary along the way. If a proxy or load balancer is placed between the client and server, it won't affect their communications, and there won't be a need to update the client or server code. Intermediary servers can improve system scalability by enabling load balancing and by providing shared caches. Also, security can be added as a layer on top of the web services, separating business logic from security logic. Adding security as a separate layer enforces security policies. Finally, intermediary servers can call multiple other servers to generate a response to the client."
       },
       {
         "question": "",
