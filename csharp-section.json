@@ -168,6 +168,43 @@
     ]
   },
   {
+    "topicName": "Computer Science",
+    "questionAnswers": [
+      {
+        "question": "Big O notation",
+        "answer": "<ol><li>O(1) means in constant time - independent of the number of items.</li><li>O(N) means in proportion to thenumber of items.</li><li>O(log N) means a time proportional tolog(N)</li></ol>"
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
+  },
+  {
     "topicName": "LINQ",
     "questionAnswers": [
       {
