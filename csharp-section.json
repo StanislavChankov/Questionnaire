@@ -172,7 +172,7 @@
     "questionAnswers": [
       {
         "question": "Big O notation",
-        "answer": "<ol><li>O(1) means in constant time - independent of the number of items.</li><li>O(N) means in proportion to thenumber of items.</li><li>O(log N) means a time proportional tolog(N)</li></ol>"
+        "answer": "<ol><li>O(1) means in constant time - independent of the number of items.</li><li>O(N) means in proportion to the number of items.</li><li>O(log N) means a time proportional tolog(N)</li></ol>"
       },
       {
         "question": "",
@@ -319,12 +319,12 @@
     "topicName": "Testing",
     "questionAnswers": [
       {
-        "question": "",
-        "answer": ""
+        "question": "FIRST principle in testing.",
+        "answer": "<a href=\"https://medium.com/@tasdikrahman/f-i-r-s-t-principles-of-testing-1a497acda8d6\">F.I.R.S.T.</a>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "TDD pros vs. cons",
+        "answer": "<p>Pros</p> <ul><li>Think about the code as an API.</li><li>Think about the code should do.</li><li>Creates modular code.</li><li>Gets fast feedback.</li><li>Tests are documentation.</li><li>Write more maintainable code.</li></ul>"
       },
       {
         "question": "",
