@@ -324,7 +324,7 @@
       },
       {
         "question": "TDD pros vs. cons",
-        "answer": "<p>Pros</p> <ul><li>Think about the code as an API.</li><li>Think about the code should do.</li><li>Creates modular code.</li><li>Gets fast feedback.</li><li>Tests are documentation.</li><li>Write more maintainable code.</li></ul>"
+        "answer": "<p>Pros</p> <ul><li>Think about the code as an API.</li><li>Think about the code should do.</li><li>Creates modular code.</li><li>Gets fast feedback.</li><li>Tests are documentation.</li><li>Write more maintainable code.</li><li>Simpler solutions, because of no over-engineering.</li>    <li>TDD eradicates fear of change.</li></ul>"
       },
       {
         "question": "",
