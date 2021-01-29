@@ -471,6 +471,10 @@
         "answer": "<p><a href=\"http://www.blackwasp.co.uk/gofpatterns.aspx\">Gang of four!</a></p>   <p><a href=\"https://refactoring.guru/design-patterns/catalog\">Refactoring guru!</a></p>    <p><a href=\"https://sourcemaking.com/design_patterns\">Source Making</p>"
       },
       {
+        "question": "Architectural design patterns",
+        "answer": "<p><ul><li>CQRS: Command Query Responsibility Segregation</li><li>Anti Corruption Layer pattern(DDD)</li><li>Circuit Breaker Pattern</li><li>Event Sourcing</li><li>Publisher-Subscriber pattern</li><li>Sharding Pattern</li><li>Strangler Pattern</li><li>Saga Pattern</li><li>Throttling Pattern</li><li>Static content hosting pattern</li></ul></p>"
+      },
+      {
         "question": "Inversion of Control",
         "answer": "IOC and DI are design pattern aiming to reach loosely coupled application modules and make them easier for to test and maintain."
       },
