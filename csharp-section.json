@@ -472,7 +472,7 @@
       },
       {
         "question": "Architectural design patterns",
-        "answer": "<p><ul><li>CQRS: Command Query Responsibility Segregation</li><li>Anti Corruption Layer pattern(DDD)</li><li>Circuit Breaker Pattern</li><li>Event Sourcing</li><li>Publisher-Subscriber pattern</li><li>Sharding Pattern</li><li>Strangler Pattern</li><li>Saga Pattern</li><li>Throttling Pattern</li><li>Static content hosting pattern</li></ul></p>"
+        "answer": "<p><ul><li>CQRS: Command Query Responsibility Segregation</li><li>Anti Corruption Layer pattern(DDD)</li><li>Circuit Breaker Pattern</li><li>Event Sourcing</li><li>Publisher-Subscriber pattern</li><li>Sharding Pattern</li><li>Strangler Pattern</li><li>Saga Pattern</li><li>Throttling Pattern</li><li>Static content hosting pattern</li><li><a href=\"https://ravindraelicherla.medium.com/10-design-patterns-every-software-architect-must-know-b33237bc01c2\"></li></ul></p>"
       },
       {
         "question": "Inversion of Control",
