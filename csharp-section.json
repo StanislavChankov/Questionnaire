@@ -689,5 +689,42 @@
         "answer": ""
       }
     ]
+  },
+  {
+    "topicName": "Networking",
+    "questionAnswers": [
+      {
+        "question": "TCP vs. UDP protocols",
+        "answer": "<ul><li>TCP is a connection-oriented protocol, whereas UDP is a connectionless protocol.</li><li>The speed for TCP is slower while the speed of UDP is faster </li><li>TCP uses handshake protocol like SYN, SYN-ACK, ACK while UDP uses no handshake protocols</li><li>TCP does error checking and also makes error recovery, on the other hand, UDP performs error checking, but it discards erroneous packets.</li><li>TCP has acknowledgment segments, but UDP does not have any acknowledgment segment.</li><li>TCP is heavy-weight, and UDP is lightweight.</li></ul>"
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      }
+    ]
   }
 ]
