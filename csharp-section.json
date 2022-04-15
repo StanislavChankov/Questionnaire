@@ -44,8 +44,8 @@
         "answer": "<p> Implementing the Dispose method allows us to manually release unmanaged resources. Instance members that are IDisposable implementations, cascade Dispose calls. The invocation of the method frees memory that was allocated, remove an item that was added to a collection, or signal the release of a lock that was acquired.</p> <p>The .NET garbage collector does not allocate or release unmanaged memory.</p>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": ".NET vs .NET Core",
+        "answer": "<ul> <li>Cross-platform (Windows, macOS, and Linux operating systems)</li><li>Modular Architecture</li><li>CLI Tools - The .NET Core comes with command-line interface (CLI) -restoring packages, building, running and publishing .NET applications.</li><li>Flexible Deployment - Each version of .NET Core comes with its docker image to easily run containers locally.</li><li>Compatibility - Compatible with .NET Framework and Mono APIs by using .NET Standard specification.</li></ul>"
       },
       {
         "question": "",
