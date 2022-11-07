@@ -15,7 +15,7 @@
         "answer": ""
       },
       {
-        "question": "Managed vs. unmanaged code",
+        "question": "Managed vs unmanaged code",
         "answer": "<figure><table><thead><tr><th>Managed Code</th><th>Unmanaged Code</th></tr></thead><tbody><tr><td>It is managed by CLR.</td><td>It is not managed by CLR.</td></tr><tr><td>.NET framework is a must for execution.</td><td>Does not require a .NET framework for the execution.</td></tr><tr><td>Memory management is done through garbage collection.</td><td>Runtime environment takes care of memory management.</td></tr></tbody></table></figure>"
       },
       {
@@ -23,11 +23,11 @@
         "answer": "<h6><code>readonly</code></h6><ul><li>readonly is a runtime constant.</li>  <li>Assign values in declaration and in the contructor part.</li>  <li>It cannot be declared inside the method.</li>   <li>It can be used with static modifiers.</li></ul>   <ul> <h6><code>const</code></h6>  <li>Const is a compile time constant.</li>  <li>It can be declared inside the method.</li>    <li>It cannot be used with static modifiers.</li>  <li>Assign values in declaration part.</li></ul>"
       },
       {
-        "question": "Boxing vs. Unboxing",
+        "question": "Boxing vs Unboxing",
         "answer": "<ul><li>Boxing is implicit casting - Boxing is the process of converting a value type to the type object. CLR wraps value type inside object and stores it on the managed heap.</li>   <li>Unboxing - explicit casting. Unboxing extracts the value type from the object.</li><ul>"
       },
       {
-        "question": "value type vs. reference type",
+        "question": "value type vs reference type",
         "answer": "<p><em>Value types</em> and <a>reference types</a> are the two main categories of C# types.</p> <p>Value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on <a>assignment</a>, passing an argument to a method, and returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied.</p>     <p>Reference types store references to their data (objects), while variables of value types directly contain their data. With reference types, two variables can reference the same object; therefore, operations on one variable can affect the object referenced by the other variable. With value types, each variable has its own copy of the data, and it is not possible for operations on one variable to affect the other (except in the case of in, ref and out parameter variables.</p>"
       },
       {
@@ -45,6 +45,10 @@
       {
         "question": "Eager loading vs lazy loading",
         "answer": "Lazy loading is the practice of delaying load or initialization of resources or objects until they're actually needed to improve performance and save system resources. Eager loading initializes or loads a resource as soon as the code is executed."
+      },
+      {
+        "question": "yield return",
+        "answer": "<p>You use the yield statement in an iterator. The `yield return` marks the method as an iterator. The compiler generates a class to implement the behavior that is expressed in the iterator block and it's called a StateMachine.</p>"
       }
     ]
   },
@@ -85,18 +89,18 @@
       },
       {
         "question": "Thread locking(synchronization primitives)",
-        "answer": "<p>Exclusive locking in threading ensures that one thread does not enter a critical section while another thread is in the critical section of code. If another thread attempts to enter a locked code, it will wait (block) until the object is released. To achieve this functionality we have to use:</p><p><ul><li>lock - ensures that only one thread can take ownership of the object's lock & enter the locked block of code. Other threads must wait till the current owner relinquishes the lock by exiting the block of code.</li><li>Semaphore - limits the number of threads that can access a resource or pool of resources concurrently.</li><li>SemaphoreSlim - lightweight alternative to Semaphore.</li><li>Mutex - synchronization primitive that can also be used for interprocess synchronization.</li><li>Monitor</li></ul></p>"
+        "answer": "<p>Exclusive locking in threading ensures that one thread does not enter a critical section while another thread is in the critical section of code. If another thread attempts to enter a locked code, it will wait (block) until the object is released. To achieve this functionality we have to use:</p><p><ul><li>lock - ensures that only one thread can take ownership of the object's lock & enter the locked block of code. Other threads must wait till the current owner relinquishes the lock by exiting the block of code.</li><li>Semaphore - limits the number of threads that can access a resource or pool of resources concurrently.</li><li>SemaphoreSlim - lightweight alternative to Semaphore.</li><li>Mutex - synchronization primitive that can also be used for interprocess synchronization.</li><li>Monitor - </li></ul></p>"
       },
       {
         "question": "Expression tree",
-        "answer": "<p>They represent code as a structure that you can examine, modify, or execute. Expression tree is an in-memory representation of a lambda expression. .NET provides a generic class Expression<T>, which represets a strongly typed lambda expression as a data structure in the form of an expression tree.</p>"
+        "answer": "<p>Expression trees represent code in a tree-like format that you can examine, modify, or execute, where each node is an expression. Expression tree is an in-memory representation of a lambda expression. .NET provides a generic class Expression<T>, which represets a strongly typed lambda expression as a data structure in the form of an expression tree.</p><p><ul><li>1. Check the node type</li><li>2. Cast it.</li><li>3. Extract information.</li></ul></p>"
       },
       {
-        "question": "Func vs. Action",
+        "question": "Func vs Action",
         "answer": "Both are pre-defined delegates. Both can have input parameters. An action can not return a value, while a func returns a value."
       },
       {
-        "question": "EF Core Tracking vs. No-Tracking Queries",
+        "question": "EF Core Tracking vs No-Tracking Queries",
         "answer": "<p>Tracking behavior controls if EF Core will keep information about an entity instance in its change tracker. If an entity is tracked, any changes detected in the entity will be persisted to the database during SaveChanges().</p><p>No-tracking behavior will require to manually modify the state by invoking `Add()`, `Update()` and `Remove()` and `SaveChanges()`, while Tracking will require only to invoke `SaveChanges()`.</p>"
       }
     ]
@@ -134,7 +138,7 @@
     "topicName": "SQL",
     "questionAnswers": [
       {
-        "question": "Inner join vs. Left join",
+        "question": "Inner join vs Left join",
         "answer": "<p>Join</p> <ul><li>Combines the records from the table/s by comparing the values in the columns and returns the ones that matches the ON CLAUSE condition. Results with a new table.</li></ul>  <p>Inner join</p> <ul><li>The result contains those records from the table/s that both records meets the ON CLAUSE condition.</li></ul>  <p>Left join</p> <ul><li>The result contains those records from the right table that meets the ON CLAUSE condition and each record from the left table.</li></ul>"
       },
       {
@@ -154,7 +158,7 @@
         "answer": ""
       },
       {
-        "question": "Cluster vs. non-clustered index?",
+        "question": "Cluster vs non-clustered index?",
         "answer": "<p>Clustered Index </p> <li> <b>A clustered index </b> defines the order in which data is physically stored in a table. Table data can be sorted in only way, therefore, there can be only one clustered index per table. In SQL Server, the primary key constraint automatically creates a clustered index on that particular column.</li> <p> Non-clustered Index </p> <li>A <b>non-clustered</b> index doesn’t sort the physical data inside the table. In fact, a non-clustered index is stored at one place and table data is stored in another place. This is similar to a textbook where the book content is located in one place and the index is located in another. This allows for more than one non-clustered index per table.</li>   <li>It is important to mention here that inside the table the data will be sorted by a clustered index. However, inside the non-clustered index data is stored in the specified order. The index contains column values on which the index is created and the address of the record that the column value belongs to.</li>   <li>When a query is issued against a column on which the index is created, the database will first go to the index and look for the address of the corresponding row in the table. It will then go to that row address and fetch other column values. It is due to this additional step that non-clustered indexes are slower than clustered indexes.</li>"
       },
       {
@@ -167,7 +171,7 @@
       },
       {
         "question": "What is Cursor?",
-        "answer": "<p>Microsoft SQL Server statements produce a complete result set, but there are times when the results are best processed one row at a time. Opening a cursor on a result set allows processing the result set one row at a time. You can assign a cursor to a variable or parameter with a <strong>cursor</strong> data type.</p>"
+        "answer": "<p>Microsoft SQL Server statements produce a complete result set, but there are times when the results are best processed one row at a time.</p><p> Opening a cursor on a result set allows processing the result set one row at a time. You can assign a cursor to a variable or parameter with a <strong>cursor</strong> data type.</p>"
       },
       {
         "question": "Join Types",
@@ -178,8 +182,16 @@
         "answer": "<ul><li>Read Uncommitted</li>   <li>Read Committed</li>    <li>Snapshot</li>   <li>Serilizable</li>  <li>Repeatable read</li></ul>"
       },
       {
+        "question": "Table vs View",
+        "answer": "<p>Basically it's a SELECT statement which is saved in the database.</p><ul><li>table is storage for storing data. Collection of related entires and consists of rows and columns.</li> <li>View is a virtual table whose contents are defined by a query. It does not exist as a stored set of values.</li> </ul>"
+      },
+      {
         "question": "What is table scan?",
         "answer": "Without indexes, a DBMS has to go through all the records in the table in order to retrieve the desired results. This process is called table-scanning and is extremely slow."
+      },
+      {
+        "question": "SQL Server Transaction isolation levels",
+        "answer": "<ul><li>Read Uncommitted</li><li>Read Committed</li><li>Repeatable Read</li><li>Snapshot</li><li>Serializable.</li></ul>"
       },
       {
         "question": "READ UNCOMMITTED?",
@@ -200,6 +212,38 @@
       {
         "question": "SERIALIZABLE",
         "answer": "<li>Statements cannot read data that has been modified but not yet committed by other transactions.</li> <li>* No other transactions can modify data that has been read by the current transaction until the current transaction completes.</li> <li>* Other transactions cannot insert new rows with key values that would fall in the range of keys read by any statements in the current transaction until the current transaction completes.</li>"
+      },
+      {
+        "question": "Index scan vs Index seek",
+        "answer": "<p>An <b>index scan</b> or table scan is when SQL Server has to scan the data or index pages to find the appropriate records. A scan is the opposite of a seek.</p><p><b>Index Scan</b> touches every row in the table it is qualified or not, the cost is proportional to the total number of rows in the table.</p><p><b>Index Seek</b> only touches rows that qualify and pages that contain these qualifying rows. The cost is proportional to the number of qualifying rows and pages rather than the total number of rows in the table.</p>"
+      },
+      {
+        "question": "SQL Execution Plan",
+        "answer": "<p>UI tool for understanding how to write efficient queries. Once a query is executed, the query processing engine quickly generates multiple execution plans and selects the one which returns the results with the best performance. There are two types of execution plans.</p><p><b>Estimated Execution Plan</b> – It is often generated before the query has been executed. Execution plan is just a guess by the query processor about how the specific steps that are to be involved while returning the results.</p><p><b>Actual Execution Plan </b>– The Actual Execution Plan is generated after the query has been executed. It shows the actual operations and steps involved while executing the query and may or may not differ from the Estimated Execution Plan.</p>"
+      },
+      {
+        "question": "SQL Server Client Statistics",
+        "answer": "<p>After executing the query a new tab labeled Client Statistics is displaying the query results grouped into:</p><ul><li>Client execution time</li><li>Query profile statistics</li><li>Network statistics</li><li>Time statistics</li></ul>"
+      },
+      {
+        "question": "Temp table vs Table variable",
+        "answer": "<p>Temp table is better for large amounts of data, while temp variables for only a few rows. Therefore It's most likely see the use of a SQL Server temp table. Unlike SQL temp tables the table variable is only accessible within the current batch.</p>"
+      },
+      {
+        "question": "Index types",
+        "answer": "<ul><li>Clustered Index</li><li>Non-Clustered Index</li><li>Unique Index</li><li>Filtered Index</li><li>Columnstore Index</li><li>Hash Index</li></ul><p><a href=\"https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver16\">Index types ref</a></p>"
+      },
+      {
+        "question":"When Scan quicker than seek?",
+        "answer": "If the SQL Server optimizer(Execution plans) determines there are so many rows need to be returned it is quicker to SCAN all rows than to use index keys."
+      },
+      {
+        "question": "Types of Pages in SQL server",
+        "answer": "<ul><li>Data Pages</li><li>Bulk Changed Map</li><li>Text/Image Pages</li><li>Page Free Space</li><li>Index Allocation Map</li><li>Secondary Global Allocation Map</li><li>Differential Changed Map</li><li>Global Allocation Map</li></ul>"
+      },
+      {
+        "question": "Which types can't be indexed",
+        "answer": "<p>The maximum key length is 900 bytes - varchar(900).<p>"
       }
     ]
   },
@@ -281,7 +325,7 @@
     "topicName": "OOP",
     "questionAnswers": [
       {
-        "question": "Abstract class vs. Interface?",
+        "question": "Abstract class vs Interface?",
         "answer": "<ul><li>Both cannot be instantiated, but abstract classes have constructors.</li><li>Interfaces cannot have implementations, but abstract classes can.</li><li>Interfaces can define only properties, methods, delegates and events, but abstract classes can define everything that classes can.</li><li>In C# we can implement multiple interfaces, but inherit from single abstract class.</li><li>Abstract classes could define any access modifiers, but interfaces does not specify modifiers, everything is public.</li></ul>"
       },
       {
@@ -334,8 +378,8 @@
         "answer": "They are used in distributed applications to trace requests across multiple services. Correlation Ids are often used in microservices architecture. A correlationId is created once first request is received and being passed to the set of microservices along with the other data."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Orchestration vs Choreography",
+        "answer": "<p>These are 2 types of communication between the microservices.</p>Orchestration is in role of orchestrator which is central unit and communicates with each service that is required to fulfil any API request or background operation flow.<p></p><p>In choreography, microservices works in parallel, unlike orchestration. The entire system work on event-based architecture, where a service collects data from a message bus and perform the business logic and in return submit data to another message bus.</p>"
       },
       {
         "question": "",
@@ -359,7 +403,7 @@
         "answer": "<a href=\"https://medium.com/@tasdikrahman/f-i-r-s-t-principles-of-testing-1a497acda8d6\">F.I.R.S.T.</a>"
       },
       {
-        "question": "TDD pros vs. cons",
+        "question": "TDD pros vs cons",
         "answer": "<p>Pros</p> <ul><li>Think about the code as an API.</li><li>Think about the code should do.</li><li>Creates modular code.</li><li>Gets fast feedback.</li><li>Tests are documentation.</li><li>Write more maintainable code.</li><li>Simpler solutions, because of no over-engineering.</li>    <li>TDD eradicates fear of change.</li></ul>"
       },
       {
@@ -393,14 +437,18 @@
     "questionAnswers": [
       {
         "question": "OAuth",
-        "answer": "<p>it’s an open standard for authorization, but not for authentication. OAuth authorizes devices, APIs, servers, and applications with access tokens rather than credentials.</p><p>There are two versions of OAuth: OAuth 1.0a and OAuth 2.0. These specifications are completely different from one another, and cannot be used together: there is no backwards compatibility between them.</p>"
+        "answer": "<p>it's an open standard for authorization, but not for authentication. OAuth authorizes devices, APIs, servers, and applications with access tokens rather than credentials.</p><p>There are two versions of OAuth: OAuth 1.0a and OAuth 2.0. These specifications are completely different from one another, and cannot be used together: there is no backwards compatibility between them.</p>"
       },
       {
-        "question": "Access token vs. Refresh token",
+        "question": "How OAuth2 works",
+        "answer": "<p>1. Client is doing authorization request to the oauth server. OAuth server responds with code.</p> <p>2. Client is requesting access token with the received code. OAuth server responds with the access token and related properties.</p> <p>3. Client is doing authorized request with the access token.</p>"
+      },
+      {
+        "question": "Access token vs Refresh token",
         "answer": "<p><b>Access token</b> is secure string that a client uses to access protected resources. An instance issues access tokens to clients that have a valid authorization grant. Each access token has a specific scope, lifespan, and other attributes.</p><p><b>Refresh token</b> is a special token that is used to obtain additional access tokens. This allows you to have short-lived access tokens without having to collect credentials every time one expires.</p>"
       },
       {
-        "question": "Authentication vs. Authorization",
+        "question": "Authentication vs Authorization",
         "answer": "Authentication verifies the identity of a user or service, and authorization determines their access rights."
       },
       {
@@ -429,7 +477,7 @@
     "topicName": "Code quality",
     "questionAnswers": [
       {
-        "question": "Coupling vs. cohesion",
+        "question": "Coupling vs cohesion",
         "answer": "<b>Cohesion:</b><br>Cohesion is the indication of the relationship within module. It is concept of intra-module. Cohesion has many types but usually highly cohesion is good for software.</p> <p><b>Coupling:</b><br> Coupling is also the indication of  the relationships between modules. It is concept of Inter-module. Coupling has also many types but usually low coupling is good for software.</p>"
       },
       {
@@ -512,23 +560,23 @@
       },
       {
         "question": "Inversion of Control",
-        "answer": "IOC and DI are design pattern aiming to reach loosely coupled application modules and make them easier for to test and maintain."
+        "answer": "IOC and DI are design pattern aiming to reach loosely coupled application modules and make them easier to test and maintain."
       },
       {
         "question": "MVC",
         "answer": "<dl><dt>Model</dt><dd>The central component of the pattern. It is the application's dynamic data structure, independent of the user interface</a></sup> It directly manages the data, logic and rules of the application.</dd><dt>View</dt><dd>Any representation of information such as a chart, diagram or table. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.</dd><dt>Controller</dt><dd>Accepts input and converts it to commands for the model or view</a></sup></dd></dl><p>In addition to dividing the application into these components, the model–view–controller design defines the interactions between them.</a></sup></p><ul><li>The model is responsible for managing the data of the application. It receives user input from the controller.</li><li>The view means presentation of the model in a particular format.</li><li>The controller responds to the user input and performs interactions on the data model objects. The controller receives the input, optionally validates it and then passes the input to the model.</li></ul>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Repository design pattern",
+        "answer": "Repository is a design pattern for abstracting the work with the data storages from domain layer.  It is a data access pattern that prompts a more loosely coupled approach to data access."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Unit of work(UoW) design pattern",
+        "answer": "<p>Unit of Work is referred to as a single transaction that involves multiple operations of insert/update/delete and so on kinds.</p> <p>Pros: All the transactions to different repositories are done in one single transaction.</p><p>This is possible by having multiple/all repositories as e reference in a single UoW object.</p>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Entity Framework Core: DbContext",
+        "answer": "<p>An instance of DbContext represents a session with the database which can be used to query and save instances of your entities to a database. DbContext is a combination of the Unit Of Work and Repository patterns.</p><p><code>DbContext</code> in EF Core allows us to perform following tasks:</p><p><ol><li>Manage database connection</li><li>Configure model &amp; relationship</li><li>Querying database</li><li>Saving data to the database</li><li>Configure change tracking</li><li>Caching</li><li>Transaction management</li></ol></p>"
       },
       {
         "question": "",
@@ -734,7 +782,7 @@
     "topicName": "Networking",
     "questionAnswers": [
       {
-        "question": "TCP vs. UDP protocols",
+        "question": "TCP vs UDP protocols",
         "answer": "<ul><li>TCP is a connection-oriented protocol, whereas UDP is a connectionless protocol.</li><li>The speed for TCP is slower while the speed of UDP is faster </li><li>TCP uses handshake protocol like SYN, SYN-ACK, ACK while UDP uses no handshake protocols</li><li>TCP does error checking and also makes error recovery, on the other hand, UDP performs error checking, but it discards erroneous packets.</li><li>TCP has acknowledgment segments, but UDP does not have any acknowledgment segment.</li><li>TCP is heavy-weight, and UDP is lightweight.</li></ul>"
       },
       {
@@ -775,8 +823,8 @@
         "answer": "<ul><li>Docker is an open-source platform for the development of applications, and also for shipping and running them. It allows for separating the application from the infrastructure using containers so that software can be delivered quickly. With Docker, you will be able to manage the infrastructure in the same ways you used to manage your applications.</li><li>It supports shipping, testing, and deploying application code quickly, thus reducing the delay between code writing and running it in production.</li><li>The Docker platform provides the ability of packaging and application execution in a loosely isolated environment namely container. The isolation and security permit you for running multiple containers at the same time on a given host. Containers are lightweight and they include every necessary thing required for running an application, so you need not depend on what is currently installed within the host.</li></ul>"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "VMware and Docker",
+        "answer": "<p>Both are categorized as virtualization technologies.</p> <p>Docker containers are not fully isolated.  Docker does not create an entire virtual operating system— instead, all required components not already running on the host machine are packaged up inside the container with the application. Docker containers are generally faster and less resource-intensive than virtual machines. Since virtual machines enable true hardware-level isolation, the chance for exploitation less likely than with Docker containers.</p>"
       },
       {
         "question": "",
@@ -808,7 +856,7 @@
     "topicName": "Other",
     "questionAnswers": [
       {
-        "question": "localization vs. globalization",
+        "question": "localization vs globalization",
         "answer": "<p>Localization is the process of customizing our application to behave as per the current culture and locale.</p><p>Globalization is the process of designing the application so that it can be used by users from across the globe by supporting multiple languages.</p>"
       },
       {
