@@ -234,7 +234,7 @@
         "answer": "<ul><li>Clustered Index</li><li>Non-Clustered Index</li><li>Unique Index</li><li>Filtered Index</li><li>Columnstore Index</li><li>Hash Index</li></ul><p><a href=\"https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-index-design-guide?view=sql-server-ver16\">Index types ref</a></p>"
       },
       {
-        "question":"When Scan quicker than seek?",
+        "question": "When Scan quicker than seek?",
         "answer": "If the SQL Server optimizer(Execution plans) determines there are so many rows need to be returned it is quicker to SCAN all rows than to use index keys."
       },
       {
@@ -589,12 +589,53 @@
     ]
   },
   {
-    "topicName": "git",
+    "topicName": "OWASP Top 10 Application Security Risks",
     "questionAnswers": [
       {
-        "question": "",
-        "answer": ""
+        "question": "Injection vulnerabilities?",
+        "answer": "This occurs when an attacker injects malicious input into an application, such as SQL, NoSQL, OS or LDAP injection. To address this vulnerability, it is recommended to use parameterized queries and prepared statements or utilize Object Relational Mapping (ORM) libraries that automatically sanitize inputs."
       },
+      {
+        "question": "Broken Authentication and Session Management",
+        "answer": "This vulnerability can occur when an attacker can impersonate another user or gain unauthorized access to sensitive data by exploiting flaws in the authentication or session management system. To address this vulnerability, it is recommended to use strong passwords, two-factor authentication, and implement session timeouts."
+      },
+      {
+        "question": "Cross-Site Scripting (XSS)",
+        "answer": "This occurs when an attacker injects malicious scripts into a web page that can execute in a user's browser. To address this vulnerability, it is recommended to sanitize user inputs and use encoding methods when displaying user-generated content."
+      },
+      {
+        "question": "Broken Access Control",
+        "answer": "This vulnerability occurs when an attacker can bypass the access control system and access sensitive data or perform unauthorized actions. To address this vulnerability, it is recommended to use Role-Based Access Control (RBAC) and implement least privilege principles."
+      },
+      {
+        "question": "Security Misconfiguration",
+        "answer": "This occurs when an application is not configured securely, leading to vulnerabilities such as open ports, default passwords, and weak encryption. To address this vulnerability, it is recommended to perform regular security audits, disable unused services, and implement secure default configurations."
+      },
+      {
+        "question": "Insecure Cryptographic Storage",
+        "answer": "This vulnerability occurs when sensitive data is not encrypted or is encrypted with weak algorithms or keys. To address this vulnerability, it is recommended to use strong encryption algorithms, secure key management, and protect sensitive data in transit and at rest."
+      },
+      {
+        "question": "Insufficient Logging and Monitoring",
+        "answer": "This vulnerability occurs when an application does not log and monitor important events, making it difficult to detect attacks and respond to them. To address this vulnerability, it is recommended to implement logging and monitoring tools and perform regular log analysis."
+      },
+      {
+        "question": "Insecure Communications",
+        "answer": "This occurs when data is transmitted over unencrypted or weakly encrypted channels, making it vulnerable to interception or modification. To address this vulnerability, it is recommended to use secure protocols such as HTTPS and SSL/TLS, and implement certificate pinning."
+      },
+      {
+        "question": "Improper Input Validation",
+        "answer": "This vulnerability occurs when an application does not validate user input properly, leading to buffer overflows, format string vulnerabilities, and other attacks. To address this vulnerability, it is recommended to sanitize user input and validate data types and ranges."
+      },
+      {
+        "question": "Web and Application Server vulnerabilities",
+        "answer": "This vulnerability occurs when an application is deployed on a vulnerable web or application server, leading to attacks such as buffer overflows, DoS attacks, and remote code execution. To address this vulnerability, it is recommended to patch and update web and application servers regularly and perform security scans and vulnerability assessments."
+      }
+    ]
+  },
+  {
+    "topicName": "git",
+    "questionAnswers": [
       {
         "question": "What is a git repository?",
         "answer": "A repository is a file structure where git stores all the project-based files. Git can either stores the files on the local or the remote repository."
